@@ -1,0 +1,959 @@
+.Item{
+    display: flex ;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.info{
+    width: 600px;
+}
+.nameItem{
+    font-size: 38px;
+    font-family: '__DynaPuff_bea326';
+    font-weight: 100;
+}
+.descItem{
+    margin: 10px 0;
+    font-size: 15px;
+    color:#808080;
+    width: 70%;
+}
+.price{
+    background: var(--color-red);
+    width: fit-content;
+    padding: 15px 22px;
+    border-radius: 20px;
+    color: white;
+    font-size: 27px;
+    margin: 25px 0 50px 0;
+    font-family: '__DynaPuff_bea326';
+    font-weight: 200;
+
+}
+.color{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.titilesize{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 55px;
+}
+
+.colors{
+    display: flex;
+    gap: 14px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.bordercolor{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+}
+
+.Acolor{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--color-gray);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.Acolor:hover .bordercolor{
+    display: block;
+    transition: 0.5s;
+}
+.sizes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 70%;
+    margin: 20px 0;
+
+}
+.stockesamderrors{
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.stocks{
+  color: #004BFE;
+}
+.size{
+    font-size: 28px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.size:hover{
+    color: var(--color-red);
+    transition: 0.3s;
+
+}
+.order{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    color: var(--color-red);
+    border: 2px solid var(--color-red);
+    border-radius: 20px;
+    position: relative;
+    gap: 15px;
+
+}
+.mins{
+    padding: 0px 15px;
+    font-size: 35px;
+    border-right: 2px solid var(--color-red);
+    margin: 0;
+    cursor: pointer;
+}
+.plus{
+    padding: 0px 15px;
+    font-size: 35px;
+    border-left: 2px solid var(--color-red);
+    height: 100%;
+    cursor: pointer;
+}
+.tocart{
+    border: 2px solid var(--color-red);
+    color: var(--color-red);
+    padding: 10px 20px;
+    border-radius: 43px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.imgs{
+    height: 610px;
+    width: 550px;
+    position: relative;
+}
+.mainImg {
+    height: 75%;
+    width: 100%;
+    border-radius: 20px;
+    
+  }
+.imgcover{
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  .secondimg {
+    height: 22%;
+    margin-top: 10px;
+  }
+.animg{
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .towishlist{
+    position: absolute;
+    top: 15px;
+    z-index: 100;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .salecontainer{
+    position: absolute;
+    background: var(--color-red);
+    left: 15px;
+    top: 15px;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 100;
+
+  }
+
+
+  .SwiperItem {
+    width: 100%;
+    position: relative;
+    height: 120px;
+    margin-top:160px;
+    margin-bottom: 150px;
+}
+
+.slideItem {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    display: block;
+}
+.SLideimgItem{
+      cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  
+
+
+
+
+
+
+  .loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+.pl {
+    width: 9em;
+    height: 9em;
+
+  }
+  .pl__ringa,  .pl__ringb ,  .pl__ringc ,  .pl__ringd {
+    animation: ringA 2s linear infinite;
+  }
+  
+  .pl__ringa {
+    stroke: #f42f25;
+  }
+  
+  .pl__ringb {
+    animation-name: ringB;
+    stroke: #f49725;
+  }
+  
+  .pl__ringc {
+    animation-name: ringC;
+    stroke: #255ff4;
+  }
+  
+  .pl__ringd {
+    animation-name: ringD;
+    stroke: #f42582;
+  }
+  
+  /* Animations */
+  @keyframes ringA {
+    from, 4% {
+      stroke-dasharray: 0 660;
+      stroke-width: 20;
+      stroke-dashoffset: -330;
+    }
+  
+    12% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -335;
+    }
+  
+    32% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -595;
+    }
+  
+    40%, 54% {
+      stroke-dasharray: 0 660;
+      stroke-width: 20;
+      stroke-dashoffset: -660;
+    }
+  
+    62% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -665;
+    }
+  
+    82% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -925;
+    }
+  
+    90%, to {
+      stroke-dasharray: 0 660;
+      stroke-width: 20;
+      stroke-dashoffset: -990;
+    }
+  }
+  
+  @keyframes ringB {
+    from, 12% {
+      stroke-dasharray: 0 220;
+      stroke-width: 20;
+      stroke-dashoffset: -110;
+    }
+  
+    20% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -115;
+    }
+  
+    40% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -195;
+    }
+  
+    48%, 62% {
+      stroke-dasharray: 0 220;
+      stroke-width: 20;
+      stroke-dashoffset: -220;
+    }
+  
+    70% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -225;
+    }
+  
+    90% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -305;
+    }
+  
+    98%, to {
+      stroke-dasharray: 0 220;
+      stroke-width: 20;
+      stroke-dashoffset: -330;
+    }
+  }
+  
+  @keyframes ringC {
+    from {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: 0;
+    }
+  
+    8% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -5;
+    }
+  
+    28% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -175;
+    }
+  
+    36%, 58% {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -220;
+    }
+  
+    66% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -225;
+    }
+  
+    86% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -395;
+    }
+  
+    94%, to {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -440;
+    }
+  }
+  
+  @keyframes ringD {
+    from, 8% {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: 0;
+    }
+  
+    16% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -5;
+    }
+  
+    36% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -175;
+    }
+  
+    44%, 50% {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -220;
+    }
+  
+    58% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -225;
+    }
+  
+    78% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -395;
+    }
+  
+    86%, to {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -440;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  .dotspinner {
+    --uib-size: 2rem;
+    --uib-speed: .9s;
+    --uib-color: #FF4D4D;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    z-index: 100;
+
+  }
+  
+  .dotspinner__dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .dotspinner__dot::before {
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    transform: scale(0);
+    opacity: 0.5;
+    animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+  }
+  
+  .dotspinner__dot:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .dotspinner__dot:nth-child(2)::before {
+    animation-delay: calc(var(--uib-speed) * -0.875);
+  }
+  
+  .dotspinner__dot:nth-child(3) {
+    transform: rotate(90deg);
+  }
+  
+  .dotspinner__dot:nth-child(3)::before {
+    animation-delay: calc(var(--uib-speed) * -0.75);
+  }
+  
+  .dotspinner__dot:nth-child(4) {
+    transform: rotate(135deg);
+  }
+  
+  .dotspinner__dot:nth-child(4)::before {
+    animation-delay: calc(var(--uib-speed) * -0.625);
+  }
+  
+  .dotspinner__dot:nth-child(5) {
+    transform: rotate(180deg);
+  }
+  
+  .dotspinner__dot:nth-child(5)::before {
+    animation-delay: calc(var(--uib-speed) * -0.5);
+  }
+  
+  .dotspinner__dot:nth-child(6) {
+    transform: rotate(225deg);
+  }
+  
+  .dotspinner__dot:nth-child(6)::before {
+    animation-delay: calc(var(--uib-speed) * -0.375);
+  }
+  
+  .dotspinner__dot:nth-child(7) {
+    transform: rotate(270deg);
+  }
+  
+  .dotspinner__dot:nth-child(7)::before {
+    animation-delay: calc(var(--uib-speed) * -0.25);
+  }
+  
+  .dotspinner__dot:nth-child(8) {
+    transform: rotate(315deg);
+  }
+  
+  .dotspinner__dot:nth-child(8)::before {
+    animation-delay: calc(var(--uib-speed) * -0.125);
+  }
+  
+  @keyframes pulse0112 {
+    0%,
+    100% {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+  
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  @media screen and (max-width:1450px) {
+    .imgs{
+      width: 500px;
+      
+   }
+   .info{
+    width: 500px;
+   }
+  }
+  @media screen and (max-width:1200px) {
+    .imgs{
+      width: 450px;
+   }
+   .info{
+    width: 450px;
+   }
+  }
+  @media screen and (max-width:1080px) {
+      .imgs{
+          width: 420px;
+          height: 570px;
+      }
+      .info{
+        width: 420px;
+      }
+      .nameItem{
+        font-size: 33px;
+      }
+      .descItem{
+        font-size: 13px;
+      }
+      .price{
+        padding: 13px 16px;
+        font-size: 23px;
+        margin: 25px 0 45px 0;
+      }
+      .color{
+        font-size: 27px;
+      }
+      .titilesize{
+        font-size: 27px;
+        margin-top: 50px;
+      }
+      .colors{
+        gap: 11px;
+        margin: 17px 0;
+        width: 75%;
+      }
+      .bordercolor{
+        width: 36px;
+        height: 36px;
+      }
+      .Acolor{
+        width: 29px;
+        height: 29px;
+      }
+      .sizes{
+        gap: 25px;
+        width: 75%;
+        margin: 17px 0;
+      }
+      .stockesamderrors{
+      margin-top: 35px;
+      font-size: 20px;
+      }
+      .size{
+        font-size: 26px;
+      }
+      .quantity{
+        gap: 13px;
+      }
+      .mins{
+        padding: 0px 13px;
+        font-size: 32px;
+      }
+      .plus{
+        padding: 0px 13px;
+        font-size: 32px;
+      }
+    .tocart{
+      padding: 7px 15px;
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width:980px) {
+    .imgs{
+        width: 380px;
+        height: 540px;
+    }
+    .info{
+      width: 380px;
+    }
+    .nameItem{
+      font-size: 30px;
+    }
+    .descItem{
+      font-size: 12px;
+    }
+    .price{
+      padding: 13px 15px;
+      font-size: 22px;
+      margin: 25px 0 45px 0;
+    }
+    .color{
+      font-size: 25px;
+    }
+    .titilesize{
+      font-size: 25px;
+      margin-top: 50px;
+    }
+    .colors{
+      gap: 9px;
+      margin: 17px 0;
+      width: 75%;
+    }
+    .bordercolor{
+      width: 34px;
+      height: 34px;
+    }
+    .Acolor{
+      width: 27px;
+      height: 27px;
+    }
+    .sizes{
+      gap: 22px;
+      width: 75%;
+      margin: 17px 0;
+    }
+    .stockesamderrors{
+    margin-top: 35px;
+    font-size: 18px;
+    }
+    .size{
+      font-size: 25px;
+    }
+    .quantity{
+      gap: 11px;
+    }
+    .mins{
+      padding: 0px 11px;
+      font-size: 30px;
+    }
+    .plus{
+      padding: 0px 11px;
+      font-size: 30px;
+    }
+  .tocart{
+    padding: 6px 15px;
+    font-size: 19px;
+  }
+
+}
+
+@media screen and (max-width:980px) {
+  .imgs{
+      width: 340px;
+      height:520;
+  }
+  .info{
+    width: 330px;
+    height: fit-content;
+
+  }
+  .nameItem{
+    font-size: 28px;
+  }
+  .descItem{
+    font-size: 12px;
+  }
+  .price{
+    padding: 10px;
+    font-size: 20px;
+    margin: 25px 0 45px 0;
+  }
+  .color{
+    font-size: 23px;
+  }
+  .titilesize{
+    font-size: 23px;
+    margin-top: 50px;
+  }
+  .colors{
+    gap: 9px;
+    margin: 17px 0;
+    width: 90%;
+  }
+  .bordercolor{
+    width: 31px;
+    height: 31px;
+  }
+  .Acolor{
+    width: 24px;
+    height: 24px;
+  }
+  .sizes{
+    gap: 22px;
+    width: 90%;
+    margin: 17px 0;
+  }
+  .stockesamderrors{
+  margin-top: 35px;
+  font-size: 18px;
+  }
+  .size{
+    font-size: 24px;
+  }
+  .quantity{
+    gap: 10px;
+  }
+  .mins{
+    padding: 0px 10px;
+    font-size: 28px;
+  }
+  .plus{
+    padding: 0px 10px;
+    font-size: 28px;
+  }
+.tocart{
+  padding: 6px 15px;
+  font-size: 18px;
+}
+
+}
+
+@media screen and (max-width:756px){
+    .Item{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgs{
+      width: 65%;
+      height:530px;
+    }
+    .info{
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameItem{
+      font-size: 35px;
+    }
+    .price{
+      margin: 25px 0 33px 0;
+    }
+    .descItem{
+      font-size: 14px;
+      text-align: center;
+      width: 85%;
+    }
+    .color{
+      font-size: 28px;
+    }
+    .titilesize{
+      font-size: 28px;
+      margin-top: 35px;
+    }
+    .colors{
+      gap: 9px;
+      margin: 17px 0;
+      width: 80%;
+      justify-content: center;
+    }
+    .sizes{
+      gap: 30px;
+      width: 80%;
+      margin: 17px 0;
+      justify-content: center;
+    }
+    .size{
+      font-size: 28px;
+    }
+    .quantity{
+      gap: 11px;
+    }
+    .mins{
+      padding: 0px 11px;
+      font-size: 30px;
+    }
+    .plus{
+      padding: 0px 11px;
+      font-size: 30px;
+    }
+  .tocart{
+    padding: 6px 15px;
+    font-size: 19px;
+  }
+
+}
+
+@media screen and (max-width:600px){
+  .imgs{
+    width: 70%;
+    height:530px;
+  }
+  .info{
+    width: 80%;
+  }
+  .nameItem{
+    font-size: 35px;
+  }
+  .price{
+    margin: 25px 0 33px 0;
+  }
+  .descItem{
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+  }
+  .color{
+    font-size: 28px;
+  }
+  .titilesize{
+    font-size: 28px;
+    margin-top: 35px;
+  }
+  .colors{
+    gap: 9px;
+    margin: 17px 0;
+    width: 90%;
+    justify-content: center;
+  }
+  .sizes{
+    gap: 30px;
+    width: 90%;
+    margin: 17px 0;
+    justify-content: center;
+  }
+  .size{
+    font-size: 28px;
+  }
+  .quantity{
+    gap: 11px;
+  }
+  .mins{
+    padding: 0px 11px;
+    font-size: 30px;
+  }
+  .plus{
+    padding: 0px 11px;
+    font-size: 30px;
+  }
+.tocart{
+  padding: 6px 15px;
+  font-size: 19px;
+}
+
+}
+
+@media screen and (max-width:500px){
+  .imgs{
+    width: 100%;
+    height:530px;
+  }
+  .info{
+    width: 100%;
+    align-items: flex-start;
+  }
+  .descItem{
+    text-align: left;
+    width: 95%;
+  }
+  .colors{
+    width: 95%;
+    justify-content: flex-start
+  }
+  .sizes{
+    width: 95%;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .size{
+    font-size: 23px;
+  }
+  .order{
+    gap: 10px;
+  }
+  .quantity{
+    gap: 5px;
+  }
+  .mins{
+    padding: 0px 9px;
+    font-size: 27px;
+  }
+  .plus{
+    padding: 0px 9px;
+    font-size: 27px;
+  }
+  .tocart{
+    padding: 5px 12px;
+    font-size: 17px;
+  }
+  .SwiperItem{
+    margin-top: 110px;
+  }
+}

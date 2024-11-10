@@ -1,0 +1,98 @@
+.checkout{
+    margin-top: 70px;
+}
+.titlecheckout{
+        font-family: '__DynaPuff_bea326';
+        font-size: 60px;
+    margin-bottom: 40px;
+}
+.forminfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.inputs{
+    padding: 15px 30px;
+    width: 60%;
+    border-radius: 20px;
+    border: 2px solid var(--color-red);
+}
+.labels{
+    font-size: 25px;
+}
+.send{
+    background: var(--color-red);
+    color: var(--color-pink);
+    border: none;
+    width: 60%;
+    padding: 13px;
+    font-size: 26px;
+    border-radius: 20px;
+    font-family: '__DynaPuff_bea326';
+}
+.errors{
+    color: red;
+    font-size: 20px;
+}
+.notoken{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 35px;
+}
+@media screen and (max-width:900px){
+    .titlecheckout{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .titlecheckout{
+        font-size: 45px;
+    }
+    .inputs{
+
+        width: 70%;
+    }
+    .send{
+        width: 70%;
+        padding: 13px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:650px) {
+    .titlecheckout{
+        font-size: 40px;
+    }
+
+    .inputs{
+
+        width: 80%;
+    }
+    .send{
+        width: 80%;
+        padding: 13px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:500px) {
+    .titlecheckout{
+        font-size: 35px;
+    }
+
+    .inputs{
+        width: 85%;
+    }
+    .send{
+        width: 85%;
+        padding: 11px;
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:450px) {
+    .titlecheckout{
+        font-size: 30px;
+    }
+}

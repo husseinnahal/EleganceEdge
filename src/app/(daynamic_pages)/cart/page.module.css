@@ -1,0 +1,732 @@
+.Cart{
+    margin-top: 70px;
+}
+
+.nameAndnb{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.nameCart{
+    font-family: '__DynaPuff_bea326';
+    font-size: 60px;
+}
+.nbitems{
+    background: #004BFE;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+.itemsinCart{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    max-height: 609px;
+    overflow: auto;
+    padding-right: 10px;
+}
+.itemsinCart::-webkit-scrollbar{
+    width: 7px;
+  }
+.itemsinCart::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background:var(--color-gray);
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+
+.item{
+    background-color: var(--color-gray);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 13px 30px;
+    position: relative;
+}
+.imgItem{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 130px;
+    height: 110px;
+}
+
+.infoItem{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.PriceandQuantity{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    color: var(--color-red);
+}
+
+.itemName{
+    color: white;
+    font-size: 30px;
+}
+.Price{
+    font-size: 25px;
+}
+.removeItem , .whenremove{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+.whenremove{
+  animation: remove 1s linear infinite;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    color:white;
+    background-color: var(--color-red);
+    border-radius: 10px;
+    position: relative;
+    gap: 10px;
+    font-size: 15px;
+}
+.mins{
+    padding: 0px 10px;
+    font-size: 22px;
+    border-right: 2px solid white;
+    margin: 0;
+    cursor: pointer;
+}
+.plus{
+    padding: 0px 10px;
+    font-size: 22px;
+    border-left: 2px solid white;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.orderSummary{
+    background: var(--color-red);
+    border-radius: 20px;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+.subtotal,.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.total{
+    margin-bottom: 66px;
+}
+.sub{
+    font-weight: 200;
+    font-size: 29px;
+}
+.subPrice{
+    font-size: 23px;
+
+}
+.tocart{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--color-pink);
+    color: var(--color-red);
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 0 0 20px 20px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.noItemcart{
+    height: 30vh;
+    text-align: center;
+    color: var(--color-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.loadind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+.pl {
+    width: 9em;
+    height: 9em;
+
+  }
+  .pl__ringa,  .pl__ringb ,  .pl__ringc ,  .pl__ringd {
+    animation: ringA 2s linear infinite;
+  }
+  
+  .pl__ringa {
+    stroke: #f42f25;
+  }
+  
+  .pl__ringb {
+    animation-name: ringB;
+    stroke: #f49725;
+  }
+  
+  .pl__ringc {
+    animation-name: ringC;
+    stroke: #255ff4;
+  }
+  
+  .pl__ringd {
+    animation-name: ringD;
+    stroke: #f42582;
+  }
+  
+  /* Animations */
+  @keyframes ringA {
+    from, 4% {
+      stroke-dasharray: 0 660;
+      stroke-width: 20;
+      stroke-dashoffset: -330;
+    }
+  
+    12% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -335;
+    }
+  
+    32% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -595;
+    }
+  
+    40%, 54% {
+      stroke-dasharray: 0 660;
+      stroke-width: 20;
+      stroke-dashoffset: -660;
+    }
+  
+    62% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -665;
+    }
+  
+    82% {
+      stroke-dasharray: 60 600;
+      stroke-width: 30;
+      stroke-dashoffset: -925;
+    }
+  
+    90%, to {
+      stroke-dasharray: 0 660;
+      stroke-width: 20;
+      stroke-dashoffset: -990;
+    }
+  }
+  
+  @keyframes ringB {
+    from, 12% {
+      stroke-dasharray: 0 220;
+      stroke-width: 20;
+      stroke-dashoffset: -110;
+    }
+  
+    20% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -115;
+    }
+  
+    40% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -195;
+    }
+  
+    48%, 62% {
+      stroke-dasharray: 0 220;
+      stroke-width: 20;
+      stroke-dashoffset: -220;
+    }
+  
+    70% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -225;
+    }
+  
+    90% {
+      stroke-dasharray: 20 200;
+      stroke-width: 30;
+      stroke-dashoffset: -305;
+    }
+  
+    98%, to {
+      stroke-dasharray: 0 220;
+      stroke-width: 20;
+      stroke-dashoffset: -330;
+    }
+  }
+  
+  @keyframes ringC {
+    from {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: 0;
+    }
+  
+    8% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -5;
+    }
+  
+    28% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -175;
+    }
+  
+    36%, 58% {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -220;
+    }
+  
+    66% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -225;
+    }
+  
+    86% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -395;
+    }
+  
+    94%, to {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -440;
+    }
+  }
+  
+  @keyframes ringD {
+    from, 8% {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: 0;
+    }
+  
+    16% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -5;
+    }
+  
+    36% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -175;
+    }
+  
+    44%, 50% {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -220;
+    }
+  
+    58% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -225;
+    }
+  
+    78% {
+      stroke-dasharray: 40 400;
+      stroke-width: 30;
+      stroke-dashoffset: -395;
+    }
+  
+    86%, to {
+      stroke-dasharray: 0 440;
+      stroke-width: 20;
+      stroke-dashoffset: -440;
+    }
+  }
+
+  @keyframes remove {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(180deg);
+    }
+  }
+
+  @media screen and (max-width:1100px){
+ 
+  .nameCart{
+      font-size: 55px;
+  }
+  .nbitems{
+      padding: 9px 14px;
+      font-size: 25px;
+      margin-left: 40px;
+  }
+  }
+
+  @media screen and (max-width:850px) {
+    .itemsinCart{
+      width: 93%;
+    } 
+    .item{
+        gap: 50px;
+    }
+    .orderSummary{
+      width: 93%;
+    }
+    .nameCart{
+      font-size: 50px;
+    }
+    .nbitems{
+        padding: 9px 14px;
+        font-size: 23px;
+        margin-left: 30px;
+    }
+  }
+
+  @media screen and (max-width:750px) {
+    .itemsinCart{
+      width: 96%;
+    } 
+    .item{
+        gap: 30px;
+        padding: 13px 20px;
+    }
+    .imgItem{
+
+      width: 110px;
+    }
+    .itemName{
+      font-size: 27px;
+    } 
+    .orderSummary{
+      width: 96%;
+    }
+    .PriceandQuantity{
+      gap: 10px;
+      font-size: 20px;
+    }
+  
+    .Price{
+        font-size: 20px;
+    }
+    .quantity{
+        gap: 10px;
+        font-size: 13px;
+    }
+    .mins{
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+    .plus{
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+    .summary{
+      font-size: 29px;
+    }
+    .subtotal,.total{
+      padding: 0 30px;
+    }
+  }
+
+  @media screen and (max-width:650px) {
+    .itemsinCart{
+      width: 100%;
+      max-height: 583px;
+      padding: 0;
+      padding-right: 3px;
+    } 
+    .item{
+        gap: 20px;
+        padding: 13px 15px;
+    }
+    .imgItem{
+      width: 105px;
+      height: 100px;
+    }
+    .itemName{
+      font-size: 25px;
+    } 
+    .orderSummary{
+      width: 100%;
+    }
+    .PriceandQuantity{
+      gap: 10px;
+      font-size: 19px;
+    }
+  
+    .Price{
+        font-size: 20px;
+    }
+    .quantity{
+        gap: 7px;
+        font-size: 13px;
+    }
+    .mins{
+        padding: 0px 7px;
+        font-size: 20px;
+    }
+    .plus{
+        padding: 0px 7px;
+        font-size: 20px;
+    }
+    .summary{
+      font-size: 29px;
+    }
+    .removeItem , .whenremove{
+      position: absolute;
+      right: 12px;
+      top: 9px;
+    }
+    .descItem{
+      font-size: 15px;
+    }
+    .nameCart{
+      font-size: 40px;
+    }
+    .nbitems{
+      padding: 7px 13px;
+      font-size: 22px;
+      margin-left: 30px;
+    }
+  }
+  @media screen and (max-width:525px) {
+    .itemsinCart{
+      max-height: 555px;
+    } 
+    .item{
+        gap: 10px;
+        padding: 10px;
+    }
+    .imgItem{
+      width: 100px;
+      height: 100px;
+    }
+    .itemName{
+      font-size: 23px;
+    } 
+    .orderSummary{
+      padding: 20px ;
+    }
+    .PriceandQuantity{
+      gap: 7px;
+      font-size: 17px;
+    }
+  
+    .Price{
+        font-size: 20px;
+    }
+    .quantity{
+        gap: 5px;
+        font-size: 11px;
+    }
+    .mins{
+        padding: 0px 5px;
+        font-size: 18px;
+    }
+    .plus{
+        padding: 0px 5px;
+        font-size: 18px;
+    }
+    .summary{
+      font-size: 26px;
+    }
+    .removeItem , .whenremove{
+      position: absolute;
+      right: 8px;
+      top: 9px;
+    }
+    .descItem{
+      font-size: 13px;
+    }
+    .sub{
+      font-size: 25px;
+      }
+      .subPrice{
+          font-size: 20px;
+      
+      }
+      .tocart{
+          padding: 11px 0;
+          font-size: 26px;
+      }
+      .subtotal,.total{
+        padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width:525px) {
+    .itemsinCart{
+      max-height: 515px;
+    } 
+    .item{
+        gap: 7px;
+        padding: 7px;
+    }
+    .imgItem{
+      width: 85px;
+      height: 95px;
+    }
+    .itemName{
+      font-size: 21px;
+    } 
+    .infoItem{
+      width: 60%;
+    }
+    .orderSummary{
+      padding: 20px ;
+    }
+    .PriceandQuantity{
+      gap: 7px;
+      font-size: 16px;
+    }
+  
+    .Price{
+        font-size: 19px;
+    }
+    .quantity{
+        gap: 5px;
+        font-size: 11px;
+    }
+    .mins{
+        padding: 0px 5px;
+        font-size: 18px;
+    }
+    .plus{
+        padding: 0px 5px;
+        font-size: 18px;
+    }
+    .summary{
+      font-size: 26px;
+    }
+    .removeItem , .whenremove{
+      position: absolute;
+      right: 5px;
+      top: 3px;
+      width: 31px;
+
+    }
+    .descItem{
+      font-size: 12px;
+    }
+    .sub{
+      font-size: 25px;
+      }
+      .subPrice{
+          font-size: 20px;
+      
+      }
+      .tocart{
+          padding: 11px 0;
+          font-size: 26px;
+      }
+      .subtotal,.total{
+        padding: 0 20px;
+    }
+    .nameCart{
+      font-size: 39px;
+    }
+    .nbitems{
+      padding: 6px 13px;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+  @media screen and (max-width:430px){
+    .itemName{
+      font-size: 20px;
+    } 
+    .item{
+      padding: 7px 5px;
+    }
+    .nameCart{
+      font-size: 35px;
+    }
+    .nbitems{
+      padding: 6px 12px;
+      font-size: 19px;
+      margin-left: 18px;
+    }
+    .infoItem{
+      width: 62%;
+    }
+  }
+  @media screen and (max-width:378px) {
+    .item{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    .imgItem{
+      width: 101px;
+    }
+    .infoItem{
+      align-items: center;
+      width: 90%;
+    }
+    .itemName{
+      font-size: 23px;
+    } 
+    .descItem{
+      font-size: 13px;
+    }
+    .removeItem , .whenremove{
+      position: absolute;
+      right: 9px;
+      top: 9px;
+    }
+    .summary{
+      font-size: 23px;
+    }
+    .sub{
+      font-size: 23px;
+
+      }
+      .subPrice{
+          font-size: 20px;
+      }
+      .subtotal,.total{
+        padding: 0 10px;
+    }
+  }

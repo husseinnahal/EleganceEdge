@@ -457,822 +457,886 @@
         width: 250px;
       }
   }
-  @media screen and (max-width:1360px)  {
-    .categories{
-      .largCat{
-        min-width: 420px;
-        .desc{
-            position: absolute;
-            left: 6%;
-            .title{
-                font-size: 50px;
-            }
-            .wear{
-                font-size: 30px;
-            }
-        }
-        .images{
-          width: 210px;
-        }
-      }
-
-      }
+  @media screen and (max-width: 1360px) {
+    .categories .largCat .desc {
+      position: absolute;
+      left: 6%;
+    }
+  
+    .categories .largCat .desc .title {
+      font-size: 50px;
+    }
+  
+    .categories .largCat .desc .wear {
+      font-size: 30px;
+    }
+  
+    .categories .largCat .images {
+      width: 210px;
+    }
   }
-  @media screen and (max-width:1300px) {
-    .info{
-      letter-spacing: 2px;
-      .desc{
-          font-size: 40px;
-      }
-      .title{
-          font-size: 65px;
-      }
-      .paragraph{
-          color: var(--color-pink);
-          font-size: 20px;
-      }
-     }
+  
+  @media screen and (max-width: 1300px) {
+    .info .desc {
+      font-size: 40px;
+    }
+  
+    .info .title {
+      font-size: 65px;
+    }
+  
+    .info .paragraph {
+      color: var(--color-pink);
+      font-size: 20px;
+    }
   }
-  @media screen and (max-width:1278px)  {
-    .categories{
-      .miniCat {
-        width:310px;
-        .desc{
-            position: absolute;
-            left: 6%;
-            .title{
-                font-size: 48px;
-            }
-            .wear{
-                font-size: 29px;
-            }
-        }
-
-      }
-
-      }
+  
+  @media screen and (max-width: 1278px) {
+    .categories .miniCat .desc {
+      position: absolute;
+      left: 6%;
+    }
+  
+    .categories .miniCat .desc .title {
+      font-size: 48px;
+    }
+  
+    .categories .miniCat .desc .wear {
+      font-size: 29px;
+    }
   }
-  @media screen and (max-width:1190px)  {
-    .categories{
-          .miniCat{
-            flex-grow: 1;
-            .desc{
-              position: absolute;
-              left: 6%;
-              .title{
-                  font-size: 55px;
-              }
-              .wear{
-                  font-size: 35px;
-              }
-          }
-          .images{
-            width: 210px;
-          }
-          }
-      }
+  
+  @media screen and (max-width: 1190px) {
+    .categories .miniCat {
+      flex-grow: 1;
+    }
+  
+    .categories .miniCat .desc {
+      position: absolute;
+      left: 6%;
+    }
+  
+    .categories .miniCat .desc .title {
+      font-size: 55px;
+    }
+  
+    .categories .miniCat .desc .wear {
+      font-size: 35px;
+    }
+  
+    .categories .miniCat .images {
+      width: 210px;
+    }
   }
-  @media screen and (max-width:1100px) {
-    .CircleRed{
-      width:400px;
+  
+  @media screen and (max-width: 1100px) {
+    .CircleRed {
+      width: 400px;
       height: 400px;
       position: absolute;
       top: 11%;
       left: 57%;
-  }
-  .landingImg{
+    }
+  
+    .landingImg {
       position: absolute;
       left: 60%;
       bottom: 0;
       width: 450px;
-  }
-    .info{
+    }
+  
+    .info {
       letter-spacing: 1.5px;
-      .desc{
-          font-size: 38px;
-      }
-      .title{
-          font-size: 59px;
-      }
-      .paragraph{
-          color: var(--color-pink);
-          font-size: 19px;
-      }
-  }
-  }
-  @media screen and (max-width:1000px) {
-    .saletitle{
-        font-size: 85px;
-        width: 190px;
     }
-    .descsale{
-
-        font-size: 22px;
-        width: 253px;
-        .desc{
-            font-size: 15px;
-        }
-        .tosalepage{
-            padding: 13px;
-            width: 137px;
-            border-radius: 24px;
-            font-size: 18px;
-        }
-        
+  
+    .info .desc {
+      font-size: 38px;
     }
-    .imgsale{
+  
+    .info .title {
+      font-size: 59px;
+    }
+  
+    .info .paragraph {
+      color: var(--color-pink);
+      font-size: 19px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .saletitle {
+      font-size: 85px;
+      width: 190px;
+    }
+  
+    .descsale {
+      font-size: 22px;
+      width: 253px;
+    }
+  
+    .descsale .desc {
+      font-size: 15px;
+    }
+  
+    .descsale .tosalepage {
+      padding: 13px;
+      width: 137px;
+      border-radius: 24px;
+      font-size: 18px;
+    }
+  
+    .imgsale {
       width: 320px;
     }
   }
-  @media screen and (max-width:952px)  {
-    .categories{
-        .largCat{
-          min-width: 540px;
-        }
-
-      }
+  
+  @media screen and (max-width: 952px) {
+    .categories .largCat {
+      min-width: 540px;
+    }
   }
-  @media screen and (max-width:870px) {
-    .sales{
-      height:300px;
+  
+  @media screen and (max-width: 870px) {
+    .sales {
+      height: 300px;
     }
-    .saletitle{
-        font-size: 75px;
-        width: 170px;
+  
+    .saletitle {
+      font-size: 75px;
+      width: 170px;
     }
-    .descsale{
-
-        font-size: 20px;
-        width: 240px;
-        .desc{
-            font-size: 14px;
-        }
-        .tosalepage{
-            padding: 11px;
-            width: 120px;
-            font-size: 17px;
-        }
-        
+  
+    .descsale {
+      font-size: 20px;
+      width: 240px;
     }
-    .imgsale{
+  
+    .descsale .desc {
+      font-size: 14px;
+    }
+  
+    .descsale .tosalepage {
+      padding: 11px;
+      width: 120px;
+      font-size: 17px;
+    }
+  
+    .imgsale {
       width: 280px;
     }
   }
-  @media screen and (max-width:800px) {
-        .CircleRed{
-          display: none;
-      }
-      .landingImg{
-        display: none;
-      }
-      .CirclePink{
-        width: 55%;
-        height: 100%;
-      }
-
-      .CircleBLue{
-          width: 30%;
-      }
-        .info{
-          letter-spacing: 2px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          left: 0;
-          gap: 30px;
-          .desc{
-              font-size: 40px;
-          }
-          .title{
-              font-size: 62px;
-          }
-          .paragraph{
-              font-size: 20px;
-          }
-      }
-      .categories{
-        .miniCat {
-          width: 300px;
-          .desc{
-              left: 5%;
-              .title{
-                  font-size: 50px;
-              }
-              .wear{
-                  font-size: 32px;
-              }
-          }
-          .images{
-            width: 190px;
-          }
-        }
-        .largCat{
-          min-width:400px;
-          .desc{
-            left: 5%;
-            .title{
-                font-size: 57px;
-            }
-            .wear{
-                font-size: 37px;
-            }
-        }
-          .images{
-            width: 250px;
-          }
-        }
-      }
-
-  }
-  @media screen and (max-width:770px) {
-    .sales{
-      height:270px;
+  
+  @media screen and (max-width: 800px) {
+    .CircleRed {
+      display: none;
     }
-    .saletitle{
-        font-size: 60px;
-        width: 145px;
+  
+    .landingImg {
+      display: none;
     }
-    .descsale{
-
-        font-size: 18px;
-        width: 230px;
-        .desc{
-            font-size: 13px;
-        }
-        .tosalepage{
-            padding: 9px;
-            width: 100px;
-            font-size: 14px;
-        }
-        
+  
+    .CirclePink {
+      width: 55%;
+      height: 100%;
     }
-    .imgsale{
+  
+    .CircleBLue {
+      width: 30%;
+    }
+  
+    .info {
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      left: 0;
+      gap: 30px;
+    }
+  
+    .info .desc {
+      font-size: 40px;
+    }
+  
+    .info .title {
+      font-size: 62px;
+    }
+  
+    .info .paragraph {
+      font-size: 20px;
+    }
+  
+    .categories .miniCat {
+      width: 300px;
+    }
+  
+    .categories .miniCat .desc {
+      left: 5%;
+    }
+  
+    .categories .miniCat .desc .title {
+      font-size: 50px;
+    }
+  
+    .categories .miniCat .desc .wear {
+      font-size: 32px;
+    }
+  
+    .categories .miniCat .images {
+      width: 190px;
+    }
+  
+    .categories .largCat {
+      min-width: 400px;
+    }
+  
+    .categories .largCat .desc {
+      left: 5%;
+    }
+  
+    .categories .largCat .desc .title {
+      font-size: 57px;
+    }
+  
+    .categories .largCat .desc .wear {
+      font-size: 37px;
+    }
+  
+    .categories .largCat .images {
       width: 250px;
     }
   }
-  @media screen and (max-width:700px) {
-    .sales{
-      height:240px;
+  
+  @media screen and (max-width: 770px) {
+    .sales {
+      height: 270px;
     }
-    .saletitle{
-        font-size: 55px;
-        width: 120px;
+  
+    .saletitle {
+      font-size: 60px;
+      width: 145px;
     }
-    .descsale{
-
-        font-size: 16px;
-        width: 190px;
-        .desc{
-            font-size: 11px;
-        }
-        .tosalepage{
-            padding: 9px;
-            width: 95px;
-            font-size: 13px;
-        }
-        
+  
+    .descsale {
+      font-size: 18px;
+      width: 230px;
     }
-    .imgsale{
+  
+    .descsale .desc {
+      font-size: 13px;
+    }
+  
+    .descsale .tosalepage {
+      padding: 9px;
+      width: 100px;
+      font-size: 14px;
+    }
+  
+    .imgsale {
+      width: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sales {
+      height: 240px;
+    }
+  
+    .saletitle {
+      font-size: 55px;
+      width: 120px;
+    }
+  
+    .descsale {
+      font-size: 16px;
+      width: 190px;
+    }
+  
+    .descsale .desc {
+      font-size: 11px;
+    }
+  
+    .descsale .tosalepage {
+      padding: 9px;
+      width: 95px;
+      font-size: 13px;
+    }
+  
+    .imgsale {
       width: 220px;
     }
   }
-  @media screen and (max-width:675px) {
-
-      .categories{
-        .miniCat {
-          width: 210px;
-          .desc{
-              left: 4%;
-              .title{
-                  font-size: 43px;
-              }
-              .wear{
-                  font-size: 29px;
-              }
-              .sheck{
-                width: 80px;
-                padding: 6px;
-                font-size: 14px;
-            }
-          }
-          .images{
-            width: 170px;
-          }
-        }
-
-      }
-
-      .features{
-        gap: 20px;
-        .reason{
-          gap: 10px;
-            .title{
-                font-size: 14px;
-            }
-        }
+  
+  @media screen and (max-width: 675px) {
+    .categories .miniCat {
+      width: 210px;
     }
-
-  }
-  @media screen and (max-width:600px) {
-    .info{
-
-      .desc{
-          font-size: 35px;
-      }
-      .title{
-          font-size: 50px;
-      }
-      .paragraph{
-          font-size: 17px;
-      }
-  }
-
-
-    .sales{
-      height:200px;
-      margin-top: 90px;
+  
+    .categories .miniCat .desc {
+      left: 4%;
     }
-    .saletitle{
-        font-size: 45px;
-        width: 100px;
-    }
-    .descsale{
-
-        font-size: 14px;
-        width: 160px;
-        .desc{
-            font-size: 10px;
-        }
-        .tosalepage{
-            padding: 9px;
-            width: 90px;
-            font-size: 12px;
-        }
-        
-    }
-    .imgsale{
-      width: 190px;
+  
+    .categories .miniCat .desc .title {
+      font-size: 43px;
     }
   }
-  @media screen and (max-width:580px) {
-
-    .categories{
-      .miniCat {
-        height: 270px;
-        width: 120px;
-        .desc{
-            left: 3%;
-            .title{
-                font-size: 37px;
-            }
-            .wear{
-                font-size: 26px;
-            }
-        }
-        .images{
-          width: 140px;
-        }
-      }
-      .largCat{
-        height: 270px;
-      }
-    }
-
-}
-  @media screen and (max-width:500px) {
-    .info{
-
-      .desc{
-          font-size: 33px;
-      }
-      .title{
-          font-size: 45px;
-      }
-      .paragraph{
-          font-size: 15px;
-      }
-     }
-
-     .categories{
-      .miniCat {
-        height: 250px;
-        .desc{
-            left: 3%;
-            .title{
-                font-size: 34px;
-            }
-            .wear{
-                font-size: 24px;
-            }
-            .sheck{
-              width: 70px;
-              padding: 5px;
-              font-size: 12px;
-          }
-        }
-        .images{
-          width: 120px;
-        }
-      }
-      .largCat{
-        height: 250px;
-        .desc{
-          left: 4%;
-          .title{
-              font-size: 42px;
-          }
-          .wear{
-              font-size: 27px;
-          }
-          .sheck{
-            width: 80px;
-            padding: 7px;
-            font-size: 14px;
-        }
-      }
-      .images{
-        width: 165px;
-      }
-      }
-    }
-
-    .sales{
-      height:170px;
-    }
-    .saletitle{
-        font-size: 37px;
-        width: 90px;
-    }
-    .descsale{
-
-        font-size: 12px;
-        width: 140px;
-        .desc{
-            font-size: 9px;
-        }
-        .tosalepage{
-            padding: 6px;
-            width: 76px;
-            font-size: 10px;
-        }
-        
-    }
-    .imgsale{
-      width: 130px;
-    }
-  }
-  @media screen and (max-width:490px) {
-
-    .features{
-      gap: 20px;
-      .reason{
-        gap: 10px;
-          .title{
-              font-size: 12px;
-          }
-          .iconfeatur{
-            width: 42px;
-          }
-      }
+  
+@media screen and (max-width: 600px) {
+  .info .desc {
+    font-size: 35px;
   }
 
-}
-  @media screen and (max-width:450px) {
-
-     .categories{
-       gap:10px 5px;
-      .miniCat {
-        height: 240px;
-        .desc{
-            .title{
-                font-size: 30px;
-            }
-            .wear{
-                font-size: 24px;
-            }
-            .sheck{
-              width: 60px;
-              padding: 5px;
-              font-size: 10px;
-          }
-        }
-        .images{
-          width: 110px;
-        }
-      }
-      .largCat{
-        height: 240px;
-        min-width: 280px;
-      }
-    }
-  }
-  @media screen and (max-width:430px) {
-    .info{
-
-      .desc{
-          font-size: 33px;
-      }
-      .title{
-        letter-spacing: 1.5px;
-          font-size: 40px;
-      }
-      .paragraph{
-          font-size: 15px;
-      }
-  }
-  .features{
-    gap: 10px;
-    .reason{
-      gap: 5px;
-        .title{
-            font-size: 10px;
-        }
-        .iconfeatur{
-          width: 36px;
-        }
-    }
-    }
-    .sales{
-      height:170px;
-    }
-    .saletitle{
-        font-size: 34px;
-        width: 80px;
-    }
-    .imgsale{
-      width: 110px;
-    }
-  }
-  @media screen and (max-width:390px) {
-
-    .categories{
-     .miniCat {
-       min-width: 175px;
-       
-       .desc{
-        left: 4%;
-           .title{
-               font-size: 40px;
-           }
-           .wear{
-               font-size: 27px;
-           }
-           .sheck{
-            width: 82px;
-            padding: 7px 5px;
-            font-size: 12px;
-         }
-       }
-       .images{
-         width: 175px;
-       }
-     }
-     .largCat{
-      .desc{
-        left: 4%;
-           .title{
-               font-size: 40px;
-           }
-           .wear{
-               font-size: 25px;
-           }
-           .sheck{
-             width: 80px;
-             padding: 7px;
-             font-size: 14px;
-         }
-       }
-     }
-   }
-
-   .sales{
-    height:150px;
-  }
-  .saletitle{
-      font-size: 32px;
-      width: 80px;
-  }
-  .descsale{
-
-      font-size: 10px;
-      width: 120px;
-      .desc{
-          font-size: 8px;
-      }
-      .tosalepage{
-          padding: 6px;
-          width: 67px;
-          font-size: 9px;
-      }
-      
-  }
-  .imgsale{
-    width: 95px;
-  }
- }
-  @media screen and (max-width:380px) {
-    .info{
-      letter-spacing: 1.5px;
-
-      .desc{
-          font-size: 28px;
-      }
-      .title{
-        letter-spacing: 1px;
-          font-size: 33px;
-      }
-      .paragraph{
-          font-size: 14px;
-      }
-  }
+  .info .title {
+    font-size: 50px;
   }
 
-  @media screen and (max-width:355px) {
-
-    .categories{
-     .largCat {
-       min-width: 175px;
-       
-       .desc{
-        left: 4%;
-           .title{
-               font-size: 36px;
-           }
-           .wear{
-               font-size: 20px;
-           }
-       }
-       .images{
-         width: 160px;
-       }
-     }
-   }
-  .saletitle{
-      font-size: 30px;
-      width: 80px;
+  .info .paragraph {
+    font-size: 17px;
   }
-  .imgsale{
-    width: 90px;
-  }
- }
 
-
- @media screen and (max-width:1010px) {
-  .bestItems{
-    gap:20px;
-
-    .item{
-        height:470px;
-        min-width: 220px;
-        .titleItem{
-            font-size: 21px;
-        }
-        .infoItem{
-            gap: 20px;
-            font-size: 18px;
-        }
-    }
-}
- }
- @media screen and (max-width:780px) {
-  .bestItems{
-    gap:30px;
-
-    .item{
-        height:470px;
-        min-width: 45%;
-        .titleItem{
-            font-size: 23px;
-        }
-        .infoItem{
-            gap: 30px;
-            font-size: 19px;
-        }
-    }
-}
- }
- @media screen and (max-width:650px) {
-  .bestSeller{
-    margin-top: 100px;
-  }
-    .bestSelerTitle{
-      font-size: 32px;
-  }
-  .bestItems{
-    gap:20px;
-
-    .item{
-      height: 440px;
-      .img{
-        height: 75%;
-    }
-        .titleItem{
-            font-size: 21px;
-        }
-        .infoItem{
-            gap: 20px;
-            font-size: 18px;
-        }
-    }
-}
- }
- @media screen and (max-width:525px) {
-  .bestSeller{
+  .sales {
+    height: 200px;
     margin-top: 90px;
   }
-  .bestSelerTitle{
-    font-size: 25px;
+
+  .saletitle {
+    font-size: 45px;
+    width: 100px;
+  }
+
+  .descsale {
+    font-size: 14px;
+    width: 160px;
+  }
+
+  .descsale .desc {
+    font-size: 10px;
+  }
+
+  .descsale .tosalepage {
+    padding: 9px;
+    width: 90px;
+    font-size: 12px;
+  }
+
+  .imgsale {
+    width: 190px;
+  }
 }
-  .bestItems{
-    gap:15px;
-    .item{
-      height: 400px;
-        .titleItem{
-            font-size: 20px;
-        }
-        .infoItem{
-            gap: 10px;
-            font-size: 15px;
-        }
-    }
+
+@media screen and (max-width: 580px) {
+  .categories .miniCat {
+    height: 270px;
+    width: 120px;
+  }
+
+  .categories .miniCat .desc .title {
+    font-size: 37px;
+  }
+
+  .categories .miniCat .desc .wear {
+    font-size: 26px;
+  }
+
+  .categories .miniCat .images {
+    width: 140px;
+  }
+
+  .categories .largCat {
+    height: 270px;
+  }
 }
- }
- @media screen and (max-width:450px) {
-  .bestSelerTitle{
+@media screen and (max-width: 500px) {
+  .info .desc {
+    font-size: 33px;
+  }
+
+  .info .title {
+    font-size: 45px;
+  }
+
+  .info .paragraph {
+    font-size: 15px;
+  }
+
+  .categories .miniCat {
+    height: 250px;
+  }
+
+  .categories .miniCat .desc .title {
+    font-size: 34px;
+  }
+
+  .categories .miniCat .desc .wear {
     font-size: 24px;
   }
-    .bestItems{
-      gap:20px 10px;
 
-      .item{
-        height: 360px;  
-        margin:0 ;
-        min-width: calc(50% - 5px);
-        .img{
-          .towishlist{
-            position: absolute;
-            right: 7px;
-            top: 5px;
-            width: 31px;
-          }
-        }
-          .titleItem{
-              font-size: 19px;
-          }
-          .infoItem{
-              gap: 10px;
-              font-size: 13px;
-              .tocart{
-                font-size: 12px;
-              }
-          }
-      }
+  .categories .miniCat .sheck {
+    width: 70px;
+    padding: 5px;
+    font-size: 12px;
   }
 
-  .salecontainer{
+  .categories .miniCat .images {
+    width: 120px;
+  }
+
+  .categories .largCat {
+    height: 250px;
+  }
+
+  .categories .largCat .desc .title {
+    font-size: 42px;
+  }
+
+  .categories .largCat .desc .wear {
+    font-size: 27px;
+  }
+
+  .categories .largCat .sheck {
+    width: 80px;
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  .categories .images {
+    width: 165px;
+  }
+
+  .sales {
+    height: 170px;
+  }
+
+  .saletitle {
+    font-size: 37px;
+    width: 90px;
+  }
+
+  .descsale {
+    font-size: 12px;
+    width: 140px;
+  }
+
+  .descsale .desc {
+    font-size: 9px;
+  }
+
+  .descsale .tosalepage {
+    padding: 6px;
+    width: 76px;
+    font-size: 10px;
+  }
+
+  .imgsale {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .features {
+    gap: 20px;
+  }
+
+  .features .reason {
+    gap: 10px;
+  }
+
+  .features .reason .title {
+    font-size: 12px;
+  }
+
+  .features .reason .iconfeatur {
+    width: 42px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .categories {
+    gap: 10px 5px;
+  }
+
+  .categories .miniCat {
+    height: 240px;
+  }
+
+  .categories .miniCat .desc .title {
+    font-size: 30px;
+  }
+
+  .categories .miniCat .desc .wear {
+    font-size: 24px;
+  }
+
+  .categories .miniCat .sheck {
+    width: 60px;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .categories .miniCat .images {
+    width: 110px;
+  }
+
+  .categories .largCat {
+    height: 240px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .info .desc {
+    font-size: 33px;
+  }
+
+  .info .title {
+    letter-spacing: 1.5px;
+    font-size: 40px;
+  }
+
+  .info .paragraph {
+    font-size: 15px;
+  }
+
+  .features {
+    gap: 10px;
+  }
+
+  .features .reason {
+    gap: 5px;
+  }
+
+  .features .reason .title {
+    font-size: 10px;
+  }
+
+  .features .reason .iconfeatur {
+    width: 36px;
+  }
+
+  .sales {
+    height: 170px;
+  }
+
+  .saletitle {
+    font-size: 34px;
+    width: 80px;
+  }
+
+  .imgsale {
+    width: 110px;
+  }
+}
+
+/* Mobile Styles - max-width 390px */
+@media screen and (max-width: 390px) {
+  .categories .miniCat {
+    min-width: 175px;
+  }
+
+  .categories .miniCat .desc {
+    left: 4%;
+  }
+
+  .categories .miniCat .desc .title {
+    font-size: 40px;
+  }
+
+  .categories .miniCat .desc .wear {
+    font-size: 27px;
+  }
+
+  .categories .miniCat .sheck {
+    width: 82px;
+    padding: 7px 5px;
+    font-size: 12px;
+  }
+
+  .categories .miniCat .images {
+    width: 175px;
+  }
+
+  .categories .largCat .desc {
+    left: 4%;
+  }
+
+  .categories .largCat .desc .title {
+    font-size: 40px;
+  }
+
+  .categories .largCat .desc .wear {
+    font-size: 25px;
+  }
+
+  .categories .largCat .sheck {
+    width: 80px;
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  .sales {
+    height: 150px;
+  }
+
+  .saletitle {
+    font-size: 32px;
+    width: 80px;
+  }
+
+  .descsale {
+    font-size: 10px;
+    width: 120px;
+  }
+
+  .descsale .desc {
+    font-size: 8px;
+  }
+
+  .descsale .tosalepage {
+    padding: 6px;
+    width: 67px;
+    font-size: 9px;
+  }
+
+  .imgsale {
+    width: 95px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .info {
+    letter-spacing: 1.5px;
+  }
+
+  .info .desc {
+    font-size: 28px;
+  }
+
+  .info .title {
+    letter-spacing: 1px;
+    font-size: 33px;
+  }
+
+  .info .paragraph {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .categories .largCat {
+    min-width: 175px;
+  }
+
+  .categories .largCat .desc {
+    left: 4%;
+  }
+
+  .categories .largCat .desc .title {
+    font-size: 36px;
+  }
+
+  .categories .largCat .desc .wear {
+    font-size: 20px;
+  }
+
+  .categories .largCat .images {
+    width: 160px;
+  }
+
+  .saletitle {
+    font-size: 30px;
+    width: 80px;
+  }
+
+  .imgsale {
+    width: 90px;
+  }
+}
+
+
+
+@media screen and (max-width: 1010px) {
+  .bestItems {
+    gap: 20px;
+
+    .item {
+      height: 470px;
+      min-width: 220px;
+
+      .titleItem {
+        font-size: 21px;
+      }
+
+      .infoItem {
+        gap: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .bestItems {
+    gap: 30px;
+
+    .item {
+      height: 470px;
+      min-width: 45%;
+
+      .titleItem {
+        font-size: 23px;
+      }
+
+      .infoItem {
+        gap: 30px;
+        font-size: 19px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .bestSeller {
+    margin-top: 100px;
+  }
+
+  .bestSelerTitle {
+    font-size: 32px;
+  }
+
+  .bestItems {
+    gap: 20px;
+
+    .item {
+      height: 440px;
+
+      .img {
+        height: 75%;
+      }
+
+      .titleItem {
+        font-size: 21px;
+      }
+
+      .infoItem {
+        gap: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 525px) {
+  .bestSeller {
+    margin-top: 90px;
+  }
+
+  .bestSelerTitle {
+    font-size: 25px;
+  }
+
+  .bestItems {
+    gap: 15px;
+
+    .item {
+      height: 400px;
+
+      .titleItem {
+        font-size: 20px;
+      }
+
+      .infoItem {
+        gap: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .bestSelerTitle {
+    font-size: 24px;
+  }
+
+  .bestItems {
+    gap: 20px 10px;
+
+    .item {
+      height: 360px;
+      margin: 0;
+      min-width: calc(50% - 5px);
+
+      .img {
+        .towishlist {
+          position: absolute;
+          right: 7px;
+          top: 5px;
+          width: 31px;
+        }
+      }
+
+      .titleItem {
+        font-size: 19px;
+      }
+
+      .infoItem {
+        gap: 10px;
+        font-size: 13px;
+
+        .tocart {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .salecontainer {
     left: 7px;
     top: 9px;
-    font-size: 13px
+    font-size: 13px;
   }
-  .outofstock{
+
+  .outofstock {
     padding: 9px;
     font-size: 14px;
   }
 }
- @media screen and (max-width:400px) {
-   .bestSeller{
-     margin-top: 80px;
-   }
-  .bestSelerTitle{
+@media screen and (max-width: 400px) {
+  .bestSeller {
+    margin-top: 80px;
+  }
+
+  .bestSelerTitle {
     font-size: 20px;
   }
-    .bestItems{
-      .item{
-        height: 350px;  
-        .img{
-          .towishlist{
-            position: absolute;
-            right: 7px;
-            top: 5px;
-            width: 29px;
-          }
+
+  .bestItems {
+    .item {
+      height: 330px;
+
+      .img {
+        .towishlist {
+          position: absolute;
+          right: 7px;
+          top: 5px;
+          width: 29px;
         }
-          .titleItem{
-              font-size: 16px;
-          }
-          .infoItem{
-              gap: 8px;
-              font-size: 12px;
-              .tocart{
-                font-size: 11px;
-              }
-          }
       }
+
+      .titleItem {
+        font-size: 16px;
+      }
+
+      .infoItem {
+        gap: 8px;
+        font-size: 12px;
+
+        .tocart {
+          font-size: 11px;
+        }
+      }
+    }
   }
-  .outofstock{
+
+  .outofstock {
     padding: 8px;
     font-size: 13px;
   }
 }
+
+

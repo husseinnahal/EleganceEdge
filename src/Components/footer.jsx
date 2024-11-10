@@ -1,7 +1,7 @@
 import styles from '@/app/page.module.css'
 import Link from 'next/link'
 
-export default function footer() {
+export default function Footer() {
   return (
     <div className={styles.footer}>
 

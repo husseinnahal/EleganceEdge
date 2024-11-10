@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect, useRef, useState } from 'react';
 
 
-export default function login() {
+export default function Login() {
   const [Info,setInfo]=useState({
     email:"",
     password:""

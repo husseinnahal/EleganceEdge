@@ -630,11 +630,11 @@
         font-size: 11px;
     }
     .mins{
-        padding: 0px 5px;
+        padding: 0px 7px;
         font-size: 18px;
     }
     .plus{
-        padding: 0px 5px;
+        padding: 0px 7px;
         font-size: 18px;
     }
     .summary{
@@ -729,4 +729,16 @@
       .subtotal,.total{
         padding: 0 10px;
     }
+    .quantity{
+      gap: 5px;
+      font-size: 12px;
+  }
+  .mins{
+      padding: 0px 7px;
+      font-size: 19px;
+  }
+  .plus{
+      padding: 0px 7px;
+      font-size: 19px;
+  }
   }

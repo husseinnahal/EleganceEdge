@@ -164,12 +164,12 @@
     box-shadow: rgb(156, 156, 156) 0px 0px 12px 1px;
   }
   .saletitle{
-      font-size: 100px;
+      font-size: 90px;
       width: 120px;
-      font-family: fantasy;
+      font-family: '__DynaPuff_bea326';
       font-weight: bolder;
       font-style: italic;
-  letter-spacing:2px;
+      letter-spacing:2px;
 
   }
   .descsale{
@@ -538,8 +538,8 @@
   }
   @media screen and (max-width:1000px) {
     .saletitle{
-        font-size: 90px;
-        width: 150px;
+        font-size: 85px;
+        width: 190px;
     }
     .descsale{
 
@@ -574,7 +574,7 @@
     }
     .saletitle{
         font-size: 75px;
-        width: 150px;
+        width: 170px;
     }
     .descsale{
 
@@ -667,8 +667,8 @@
       height:270px;
     }
     .saletitle{
-        font-size: 70px;
-        width: 130px;
+        font-size: 60px;
+        width: 145px;
     }
     .descsale{
 
@@ -690,10 +690,10 @@
   }
   @media screen and (max-width:700px) {
     .sales{
-      height:270px;
+      height:240px;
     }
     .saletitle{
-        font-size: 60px;
+        font-size: 55px;
         width: 120px;
     }
     .descsale{
@@ -767,11 +767,11 @@
 
 
     .sales{
-      height:230px;
+      height:200px;
       margin-top: 90px;
     }
     .saletitle{
-        font-size: 50px;
+        font-size: 45px;
         width: 100px;
     }
     .descsale{
@@ -878,8 +878,8 @@
       height:170px;
     }
     .saletitle{
-        font-size: 40px;
-        width: 80px;
+        font-size: 37px;
+        width: 90px;
     }
     .descsale{
 
@@ -970,6 +970,16 @@
         }
     }
     }
+    .sales{
+      height:170px;
+    }
+    .saletitle{
+        font-size: 34px;
+        width: 80px;
+    }
+    .imgsale{
+      width: 110px;
+    }
   }
   @media screen and (max-width:390px) {
 
@@ -998,11 +1008,11 @@
    }
 
    .sales{
-    height:170px;
+    height:150px;
   }
   .saletitle{
-      font-size: 38px;
-      width: 70px;
+      font-size: 32px;
+      width: 80px;
   }
   .descsale{
 
@@ -1019,7 +1029,7 @@
       
   }
   .imgsale{
-    width: 110px;
+    width: 95px;
   }
  }
   @media screen and (max-width:380px) {
@@ -1059,6 +1069,13 @@
        }
      }
    }
+  .saletitle{
+      font-size: 30px;
+      width: 80px;
+  }
+  .imgsale{
+    width: 90px;
+  }
  }
 
 

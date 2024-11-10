@@ -422,7 +422,7 @@
   right: 40px;
   color: white;
   font-size: 50px;
-  font-family: cursive;
+  font-family:'__DynaPuff_bea326';
   cursor: pointer;
 }
 .searchsdiv{
@@ -993,7 +993,7 @@
   width: 33px;
   height: 33px;
   position: absolute;
-  top: 8%;
+  top: 57px;
   right: calc(10% + 55px);
   animation: spin89345 1s linear infinite;
 }
@@ -1086,6 +1086,12 @@
   }
   .inputsearch{
     font-size: 40px;
+  }
+  .loader {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 55px;
   }
   .itemssearch{
     gap: 40px 50px;
@@ -1235,6 +1241,16 @@
   .inputsearch{
     font-size: 30px;
   }
+  .loader {
+    width: 28px;
+    height: 28px;
+    top: 50px;
+  }
+  .closeSearch{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+  }
 }
 @media screen and (max-width :450px){
   .singin ,.login{
@@ -1301,6 +1317,11 @@
     }
     .inputsearch{
       font-size: 25px;
+    }
+    .loader {
+      width: 26px;
+      height: 26px;
+      top: 47px;
     }
   .menures{
     width: 270px;

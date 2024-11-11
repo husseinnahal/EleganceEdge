@@ -63,8 +63,7 @@ const [Cart,setCart]=useState([])
           }
          }
       );
-      
-      setCart(res.data.data.items)  
+      setCart(res.data.data._id)  
     } catch (error) {
         console.log("An error occurred:", error); // Log generic error if no response data
     }
@@ -76,13 +75,15 @@ const [Cart,setCart]=useState([])
   },[Token,RefrCartinhead]);
 
 
+
+
   // send data to order 
   const [Message,setMessage]=useState("")
   async function Order(e) {
       e.preventDefault();
         try {
-          const res=await axios.post("https://devstyle-u119.onrender.com/api/Order", {
-            cartid: Cart._id,
+          await axios.post("https://devstyle-u119.onrender.com/api/Order", {
+            cartid: Cart,
             name:Infouser.name,
             addres: Infouser.adress,
             phone:Infouser.phone

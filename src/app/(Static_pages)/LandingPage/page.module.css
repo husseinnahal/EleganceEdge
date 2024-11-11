@@ -744,7 +744,7 @@
           .miniCat .desc .sheck{
             width: 80px;
             padding: 6px;
-            font-size: 14px;
+            font-size: 13px;
           }
         .miniCat .images{
           width: 170px;
@@ -852,8 +852,8 @@
         }
         .miniCat .desc .sheck{
           width: 70px;
-          padding: 5px;
-          font-size: 12px;
+          padding: 3px;
+          font-size: 11px;
         }
       .miniCat .images{
         width: 120px;
@@ -937,7 +937,7 @@
       }
       .miniCat .desc .sheck{
         width: 60px;
-        padding: 5px;
+        padding: 2px;
         font-size: 10px;
       }
       .miniCat .images{
@@ -1001,8 +1001,8 @@
       }
       .miniCat .desc .sheck{
        width: 82px;
-       padding: 7px 5px;
-       font-size: 12px;
+       padding: 5px 2px;
+       font-size: 11px;
       }
       .miniCat .images{
         width: 175px;

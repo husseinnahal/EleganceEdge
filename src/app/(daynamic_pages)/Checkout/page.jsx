@@ -95,7 +95,7 @@ const [Cart,setCart]=useState([])
             adress:"" ,
           });
 
-          alert("Order created successfully!");
+          alert("EleganceEdge:\nOrder created successfully!");
           window.location.href = "/";
 
         } catch (err) {

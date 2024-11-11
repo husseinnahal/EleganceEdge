@@ -417,33 +417,7 @@ async function Addtocart() {
             ></Link>
           </SwiperSlide>
         ))}
-        {Cat.map((cat, index) => (
-          <SwiperSlide key={index} className={styles.slide}>
-            <Link
-              className={styles.slideItem}
-              href={`/${cat.category}/${cat._id}`}
-              style={{ backgroundImage: `url(https://devstyle-u119.onrender.com${cat.imageCover})` }}
-            ></Link>
-          </SwiperSlide>
-        ))}
-        {Cat.map((cat, index) => (
-          <SwiperSlide key={index} className={styles.slide}>
-            <Link
-              className={styles.slideItem}
-              href={`/${cat.category}/${cat._id}`}
-              style={{ backgroundImage: `url(https://devstyle-u119.onrender.com${cat.imageCover})` }}
-            ></Link>
-          </SwiperSlide>
-        ))}
-        {Cat.map((cat, index) => (
-          <SwiperSlide key={index} className={styles.slide}>
-            <Link
-              className={styles.slideItem}
-              href={`/${cat.category}/${cat._id}`}
-              style={{ backgroundImage: `url(https://devstyle-u119.onrender.com${cat.imageCover})` }}
-            ></Link>
-          </SwiperSlide>
-        ))}
+
       </Swiper>
     </>
   );

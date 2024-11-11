@@ -25,6 +25,7 @@ export default function CategoriesPage({params}) {
     const [Loading,setLoading]=useState(false)
     const [Items,setItems]=useState([])   
     const [Wishlist,setWishlist]=useState([]);
+    const [NbItems,setNbItems]=useState(0);
 
     // check if token is exist or no 
     useEffect(() => {
@@ -34,6 +35,9 @@ export default function CategoriesPage({params}) {
   },[DisplayUser,Login]);
 
     const [dataFromChild, setDataFromChild] = useState(searchParams.get('Subcat') || '');
+    useEffect(()=>{
+      setPagination(1)
+    },[dataFromChild])
     //for get which subcat we use
     const handleDataFromChild = (data) => {
         setDataFromChild(data);
@@ -136,8 +140,9 @@ export default function CategoriesPage({params}) {
             const sortNew = Popular ? '' : `&sortNew=${SortNew}`;
 
             
-            const res = await axios.get( `https://devstyle-u119.onrender.com/api/Items/cat/${params.CategoriesPage}?minPrice=${Minprice}&maxPrice=${Maxprice}${sortNew}&limit=16&page=${Pagination}${subcategoryParam}${popularParam}`);
+            const res = await axios.get( `https://devstyle-u119.onrender.com/api/Items/cat/${params.CategoriesPage}?minPrice=${Minprice}&maxPrice=${Maxprice}${sortNew}&limit=6&page=${Pagination}${subcategoryParam}${popularParam}`);
                 setItems(res.data.data);
+                setNbItems(res.data.Nbitems);
                 
         } catch (error) {
              setItems([])
@@ -172,10 +177,12 @@ export default function CategoriesPage({params}) {
     // handle functions for update values when we want filter
     const minprice=(e)=>{
         setMinprice(e.target.value)
-        
+        setPagination(1)
     }
     const maxprice=(e)=>{
         setMaxprice(e.target.value)
+        setPagination(1)
+
     }
     const sortnew=(e)=>{
         setSortNew(e.target.value)
@@ -185,10 +192,13 @@ export default function CategoriesPage({params}) {
       }
 
 // handle pagination functions
-    const maxPages = useMemo(() => Math.ceil(Items.length / 16), [Items]);
+const maxPages =  Math.ceil(NbItems / 6); 
+
+    
     function plusOne() {
         if (Pagination < maxPages) {
             setPagination(Pagination + 1);
+            
         }
     }
     function minsOne(){

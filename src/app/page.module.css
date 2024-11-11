@@ -590,11 +590,11 @@
     cursor: pointer;
 }
 .tologin ,.tosignin{
-    left: 18%;
+    left: 17%;
     text-align: right;
     font-size: 11px;
     letter-spacing: 0.5px;
-    width: 60%;
+    width: 63%;
     margin-left: 20%;
 
 }
@@ -1280,9 +1280,7 @@
       width: 75%;
   }
   .tologin ,.tosignin{
-    left: 20%;
     font-size: 11px;
-    width: 60%;
   }
 
   .loginpage{

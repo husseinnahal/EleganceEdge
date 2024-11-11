@@ -92,10 +92,6 @@ export default function SwiperSub({cat,Subcats}) {
         }}
         className={styles.Swiper}
       >
-        <SwiperSlide className={styles.SwiperSlide}  onClick={() => handleSendData("")} style={{color:!inputValue?"#FF4D4D":""}}>
-                <div className={styles.Subimg} ></div>
-                <h2 className={styles.nameSubcat}>All</h2>
-        </SwiperSlide>
         {Subcat.map((sucats,index)=>
             <SwiperSlide className={styles.SwiperSlide} key={index}   onClick={() => handleSendData(sucats._id)} 
             style={{color:inputValue==sucats._id?"#FF4D4D":""}} >
